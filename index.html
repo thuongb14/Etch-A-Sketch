@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Etch A Sketch</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <h3>Sketch Pad</h3>
+        <div class="header">
+          <button onclick="buttonColor('black')">Black</button>
+          <button onclick="buttonColor('grey')">Grey</button>
+          <button onclick="buttonColor('white')" >Erasor</button>
+          <button onclick="buttonColor('random')">Rainbow</button>
+          <button onclick="reset()" >Reset</button>
+          <input type="color" class="color">
+        </div>
+        <div class="mode">Mode: Drawing Mode (click to change)</div>
+        <div class="container-board">
+          <div class="board"></div>
+        </div>
+        <form id="footer">
+          <input 
+          type="number" 
+          id="input" 
+          onchange="changeSize(this.value)">
+          <button class="submit">Submit</button>
+        </form>
+      
+
+        <script src="./app.js"></script>
+    </body>
+</html>

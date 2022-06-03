@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+
+body {
+  background-color: white;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Coda Caption', sans-serif;
+  }
+
+  .mode {
+    font-family: monospace;
+    padding-top: 20px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .container-board {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .board {
+    display: grid;
+    width: 680px;
+    height: 680px;
+    border: 2px solid peru;
+  }
+  
+  #footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+      font-size: 16px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 13px 20px 13px;
+      outline: 0;
+      border: 1px solid black;
+      cursor: pointer;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+  button:after {
+      content: "";
+      background-color: #ffe54c;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+    }
+    
+  button:hover:after {
+      top: 0px;
+      left: 0px;
+    }
+    
+  
