@@ -1,4 +1,4 @@
-let click = true;
+let dblclick = true;
 let color = "black"
 const board = document.querySelector('.board');
 const box = document.querySelectorAll('.box')
@@ -41,7 +41,7 @@ submitBtn.addEventListener('click', function(e) {
 
 //Auto color function
 function drawColor() {
-    if (click) {
+    if (dblclick) {
         this.style.backgroundColor = color;
         colorChoice.addEventListener('change', function(e) {
             color = e.target.value
@@ -72,11 +72,11 @@ function reset() {
     })
 }
 
-document.querySelector('body').addEventListener('click', function() {
-    click = !click;
-    if(click == true) {
+document.querySelector('body').addEventListener('dblclick', function() {
+    dblclick = !dblclick;
+    if(dblclick == true) {
         drawMode.textContent = 'Mode: Drawing Mode';
-    } else if (click == false) {
+    } else if (dblclick == false) {
         drawMode.textContent = 'Mode: Non-Drawing Mode'
     }
 
